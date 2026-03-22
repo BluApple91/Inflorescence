@@ -1,0 +1,109 @@
+/* ========================= */
+/* ALGEMEEN */
+/* ========================= */
+
+a:hover {
+    color: #298997;
+}
+
+/* ========================= */
+/* MENU */
+/* ========================= */
+
+td.menu {
+    text-align: left;
+    vertical-align: top;
+}
+
+/* ========================= */
+/* CHAT BUTTON */
+/* ========================= */
+
+#chatToggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 15px 18px;
+    border-radius: 10px; /* iets netter dan 50% */
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* ========================= */
+/* CHAT BOX */
+/* ========================= */
+
+#chatbox {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 400px;
+    height: 500px;
+
+    border: 1px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+
+    z-index: 9998;
+}
+
+#chatbox.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* ========================= */
+/* TABLE */
+/* ========================= */
+
+table.center {
+    width: 100%;
+    max-width: 800px;
+}
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+    table.center,
+    table.center tr,
+    table.center td {
+        display: block;
+        width: 100%;
+    }
+
+    /* menu bovenaan */
+    td.menu {
+        background: #f4f4f4;
+        padding: 10px;
+        text-align: left;
+    }
+
+    /* menu links onder elkaar */
+    td.menu a {
+        display: block;
+        margin: 6px 0;
+    }
+
+    /* content */
+    td.content-area {
+        padding: 10px;
+    }
+
+    /* responsive images */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
