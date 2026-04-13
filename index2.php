@@ -2,10 +2,10 @@
 
 <?php
 $conn = new mysqli(
-  "sql212.infinityfree.com",
-  "if0_38264113",
-  "Wi5BBwhpHy9A",
-  "if0_38264113_database"
+  "host",
+  "database",
+  "database_password",
+  "database_name"
 );
 
 if ($conn->connect_error) {
